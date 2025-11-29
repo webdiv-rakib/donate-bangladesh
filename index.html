@@ -45,8 +45,8 @@
     <main>
         <!-- Donate and History button section -->
         <section class="flex justify-center items-center gap-6 mt-6">
-            <button class="btn btn-soft bg-[#B4F461]">Donate</button>
-            <button class="btn btn-soft">History</button>
+            <button id="donate-section" class="btn btn-soft bg-[#B4F461]">Donate</button>
+            <button id="history-section" class="btn btn-soft">History</button>
         </section>
 
         <!-- Donate for Noakhali -->
@@ -67,8 +67,8 @@
                         or small, makes difference. Please join us in supporting the relief efforts and making a
                         positive
                         impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="input w-full p-5 mt-6" />
-                    <button class="btn bg-[#B4F461] mt-4 w-full">Donate Now</button>
+                    <input id="noakhali-amount" type="text" placeholder="Write Donation Amount" class="input w-full p-5 mt-6" />
+                    <button id="donate-1" class="btn bg-[#B4F461] mt-4 w-full">Donate Now</button>
                 </div>
             </div>
         </section>
@@ -89,7 +89,7 @@
                         offer crucial support and help rebuild lives in the aftermath of this disaster. Every
                         contribution counts towards making a real difference. Please consider donating today to assist
                         those in urgent need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="input w-full p-5 mt-6" />
+                    <input id="feni-amount" type="text" placeholder="Write Donation Amount" class="input w-full p-5 mt-6" />
                     <button class="btn bg-[#B4F461] mt-4 w-full">Donate Now</button>
                 </div>
             </div>
@@ -112,7 +112,7 @@
                         time. Every donation plays a vital role in alleviating their suffering and aiding in their
                         recovery. Please consider making a donation to support these brave individuals in their time of
                         need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="input w-full p-5 mt-6" />
+                    <input id="quota-amount" type="text" placeholder="Write Donation Amount" class="input w-full p-5 mt-6" />
                     <button class="btn bg-[#B4F461] mt-4 w-full">Donate Now</button>
                 </div>
             </div>
@@ -121,11 +121,9 @@
     <footer>
 
     </footer>
-    <!-- will start adding functionality here -->
-    <!-- program to day so bit busy today -->
-    <!-- today is program so i bit busy today -->
-     <!-- today all program just complete now will start working -->
     <script src="scripts/home.js"></script>
+    <script src="scripts/donation.js"></script>
+    <script src="scripts/utilities.js"></script>
 </body>
 
 </html>
