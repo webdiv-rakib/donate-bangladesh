@@ -7,6 +7,10 @@ document.getElementById('donate-1').addEventListener('click', function (event) {
 
     // console.log(accountBalance, noakhaliBalance, inputAmount);
     if (inputAmount >= '1') {
+        if (inputAmount > accountBalance) {
+            alert('You do not have sufficient balance in your account');
+            return;
+        }
         const newBalance = noakhaliBalance + inputAmount;
         const newAccountBalance = accountBalance - inputAmount;
         document.getElementById('current-balance').innerText = newAccountBalance;
@@ -24,6 +28,10 @@ document.getElementById('donate-2').addEventListener('click', function (event) {
     const feniBalance = getCurrentBalance('feni');
     const inputAmount = getInputAmount('feni-amount');
     if (inputAmount >= '1') {
+        if (inputAmount > accountBalance) {
+            alert('You do not have sufficient balance in your account');
+            return;
+        }
         const newBalance = feniBalance + inputAmount;
         document.getElementById('feni').innerText = newBalance;
         const newAccountBalance = accountBalance - inputAmount;
@@ -41,6 +49,10 @@ document.getElementById('donate-3').addEventListener('click', function (event) {
     const quotaBalance = getCurrentBalance('quota');
     const inputAmount = getInputAmount('quota-amount');
     if (inputAmount >= '1') {
+        if (inputAmount > accountBalance) {
+            alert('You do not have sufficient balance in your account');
+            return;
+        }
         const newBalance = quotaBalance + inputAmount;
         document.getElementById('quota').innerText = newBalance;
         const newAccountBalance = accountBalance - inputAmount;
