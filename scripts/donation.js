@@ -20,6 +20,7 @@ document.getElementById('donate-1').addEventListener('click', function (event) {
         const newAccountBalance = accountBalance - inputAmount;
         document.getElementById('current-balance').innerText = newAccountBalance;
         document.getElementById('noakhali').innerText = newBalance;
+        document.getElementById('my_modal_1').showModal();
     }
     else {
         alert('Donation Failed');
@@ -45,6 +46,7 @@ document.getElementById('donate-2').addEventListener('click', function (event) {
         document.getElementById('feni').innerText = newBalance;
         const newAccountBalance = accountBalance - inputAmount;
         document.getElementById('current-balance').innerText = newAccountBalance;
+        document.getElementById('my_modal_1').showModal();
     }
     else {
         alert('Donation Failed');
@@ -70,6 +72,7 @@ document.getElementById('donate-3').addEventListener('click', function (event) {
         document.getElementById('quota').innerText = newBalance;
         const newAccountBalance = accountBalance - inputAmount;
         document.getElementById('current-balance').innerText = newAccountBalance;
+        document.getElementById('my_modal_1').showModal();
     }
     else {
         alert('Donation Failed');
