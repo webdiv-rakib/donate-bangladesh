@@ -5,7 +5,12 @@ document.getElementById('donate-1').addEventListener('click', function (event) {
     const noakhaliBalance = getCurrentBalance('noakhali');
     const inputAmount = getInputAmount('noakhali-amount');
 
+
     // console.log(accountBalance, noakhaliBalance, inputAmount);
+    if (isNaN(inputAmount)) {
+        alert('Donation Failed');
+        return;
+    }
     if (inputAmount >= '1') {
         if (inputAmount > accountBalance) {
             alert('You do not have sufficient balance in your account');
@@ -27,6 +32,10 @@ document.getElementById('donate-2').addEventListener('click', function (event) {
     const accountBalance = getCurrentBalance('current-balance');
     const feniBalance = getCurrentBalance('feni');
     const inputAmount = getInputAmount('feni-amount');
+    if (isNaN(inputAmount)) {
+        alert('Donation Failed');
+        return;
+    }
     if (inputAmount >= '1') {
         if (inputAmount > accountBalance) {
             alert('You do not have sufficient balance in your account');
@@ -48,6 +57,10 @@ document.getElementById('donate-3').addEventListener('click', function (event) {
     const accountBalance = getCurrentBalance('current-balance');
     const quotaBalance = getCurrentBalance('quota');
     const inputAmount = getInputAmount('quota-amount');
+    if (isNaN(inputAmount)) {
+        alert('Donation Failed');
+        return;
+    }
     if (inputAmount >= '1') {
         if (inputAmount > accountBalance) {
             alert('You do not have sufficient balance in your account');
