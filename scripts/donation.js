@@ -1,3 +1,4 @@
+// Donate for Noakhali
 document.getElementById('donate-1').addEventListener('click', function (event) {
     event.preventDefault();
     const accountBalance = getCurrentBalance('current-balance');
@@ -12,6 +13,25 @@ document.getElementById('donate-1').addEventListener('click', function (event) {
         document.getElementById('noakhali').innerText = newBalance;
     }
     else {
-        alert('donation failed');
+        alert('Donation Failed');
     }
 })
+
+// Donate for Feni
+document.getElementById('donate-2').addEventListener('click', function (event) {
+    event.preventDefault();
+    const accountBalance = getCurrentBalance('current-balance');
+    const feniBalance = getCurrentBalance('feni');
+    const inputAmount = getInputAmount('feni-amount');
+    if (inputAmount >= '1') {
+        const newBalance = feniBalance + inputAmount;
+        document.getElementById('feni').innerText = newBalance;
+        const newAccountBalance = accountBalance - inputAmount;
+        document.getElementById('current-balance').innerText = newAccountBalance;
+    }
+    else {
+        alert('Donation Failed');
+    }
+})
+
+// Donate for Quota
