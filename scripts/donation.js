@@ -35,3 +35,18 @@ document.getElementById('donate-2').addEventListener('click', function (event) {
 })
 
 // Donate for Quota
+document.getElementById('donate-3').addEventListener('click', function (event) {
+    event.preventDefault();
+    const accountBalance = getCurrentBalance('current-balance');
+    const quotaBalance = getCurrentBalance('quota');
+    const inputAmount = getInputAmount('quota-amount');
+    if (inputAmount >= '1') {
+        const newBalance = quotaBalance + inputAmount;
+        document.getElementById('quota').innerText = newBalance;
+        const newAccountBalance = accountBalance - inputAmount;
+        document.getElementById('current-balance').innerText = newAccountBalance;
+    }
+    else {
+        alert('Donation Failed');
+    }
+})
