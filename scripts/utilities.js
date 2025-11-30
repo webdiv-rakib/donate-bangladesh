@@ -16,3 +16,16 @@ function getInputAmount(id) {
     const inputAmountNumber = parseFloat(inputAmount);
     return inputAmountNumber;
 }
+
+function getSentence(id) {
+    const title = document.getElementById(id).innerText;
+    return title;
+}
+
+
+function showSectionById(id) {
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
