@@ -30,7 +30,6 @@ document.getElementById('donate-1').addEventListener('click', function (event) {
             </div>
         `;
         document.getElementById('history-container').appendChild(p);
-
         document.getElementById('my_modal_1').showModal();
     }
     else {
@@ -97,7 +96,7 @@ document.getElementById('donate-3').addEventListener('click', function (event) {
         const newAccountBalance = accountBalance - inputAmount;
         document.getElementById('current-balance').innerText = newAccountBalance;
         document.getElementById('my_modal_1').showModal();
-        
+
         const timeNow = new Date().toLocaleString();
         const p = document.createElement('p');
         p.innerHTML = `
